@@ -88,8 +88,8 @@ You should have:
 - access to Google Cloud Console for that account
 - enough IAM permission to view and modify organization IAM bindings
 
-This guide assumes you can open Cloud Shell and run `gcloud` commands.
-
+To open the cloud shell in Google Cloud, click its icon in the top right corner, next to your profile image:
+[open-terminal][open_terminal.png]
 ---
 
 ## Required Permissions
