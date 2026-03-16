@@ -89,7 +89,7 @@ You should have:
 - enough IAM permission to view and modify organization IAM bindings
 
 To open the cloud shell in Google Cloud, click its icon in the top right corner, next to your profile image:
-[open-terminal][open_terminal.png]
+![image showing where the terminal can be located][open_terminal.png]
 ---
 
 ## Required Permissions
