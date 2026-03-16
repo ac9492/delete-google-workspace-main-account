@@ -93,13 +93,7 @@ You should have:
 - access to the Google account that is the Workspace admin you want to delete
 - access to Google Cloud Console for that account
 - enough IAM permission to view and modify organization IAM bindings
----
 
-## Opening the cloud shell
-
-To open the cloud shell, click the terminal icon in the top right corner, next to your profile icon.
-
-![image showing where the terminal can be located](images/open_terminal.png)
 ---
 
 ## Required Permissions
@@ -183,6 +177,9 @@ If `gcloud` is set to use a **project number** as the default project, some comm
 2. Sign in with the Workspace admin account you are trying to delete.
 3. In the top-right area of the page, click the **Activate Cloud Shell** button.
    - It looks like a terminal icon: `>_`
+
+![image showing where the terminal can be located](images/open_terminal.png)
+
 4. Wait for the shell panel to open.
 
 All steps below can be done from this shell.
@@ -249,8 +246,8 @@ You should see your domain and a numeric organization ID.
 Example output:
 
 ```text
-DISPLAY_NAME: alt.interactiva.studio
-ID: 604316355852
+DISPLAY_NAME: www.domain.com
+ID: 604315325855
 DIRECTORY_CUSTOMER_ID: Cxxxxxxx
 ```
 
@@ -263,7 +260,7 @@ export ORG_ID="YOUR_ORG_ID_HERE"
 Example:
 
 ```bash
-export ORG_ID="604316355852"
+export ORG_ID="604315325855"
 ```
 
 Verify it:
@@ -324,7 +321,7 @@ gcloud organizations get-iam-policy "$ORG_ID" \
 
 > **Important**
 >
-> If these commands fail with permission errors, you need another org admin/owner to assign the roles to your account before continuing.
+> If these commands fail with permission errors, you need might need additional roles. Consult with ChatGPT/Claude what you're trying to access and what permission you need.
 
 ---
 
