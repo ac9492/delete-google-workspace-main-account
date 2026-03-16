@@ -1,4 +1,4 @@
-# How to Delete a Google Workspace / Admin Account When Google Says Google Cloud Resources Still Exist
+<img width="1029" height="471" alt="image" src="https://github.com/user-attachments/assets/0838fbb0-514c-4be3-9312-9c67c8e5272b" /># How to Delete a Google Workspace / Admin Account When Google Says Google Cloud Resources Still Exist
 
 This guide documents a real-world fix for a confusing Google Workspace deletion loop:
 
@@ -87,19 +87,29 @@ You should have:
 - access to the Google account that is the Workspace admin you want to delete
 - access to Google Cloud Console for that account
 - enough IAM permission to view and modify organization IAM bindings
+---
 
-To open the cloud shell in Google Cloud, click its icon in the top right corner, next to your profile image:
+## Opening the cloud shell
+
+To open the cloud shell, click the terminal icon in the top right corner, next to your profile icon.
+
 ![image showing where the terminal can be located](images/open_terminal.png)
 ---
 
 ## Required Permissions
 
-Assign these roles on the **organization** before doing cleanup:
+Assign these roles to your user before starting. These can be added via the shell or the UI.
 
 - `roles/resourcemanager.organizationAdmin`
 - `roles/resourcemanager.folderViewer`
 - `roles/resourcemanager.projectDeleter`
 - `roles/resourcemanager.folderAdmin`
+
+To add permissions via the UI, [go here](https://console.cloud.google.com/iam-admin/iam).
+
+Then, click the pencil icon next to your user, and click on "Add Role".
+
+
 
 What each one is needed for:
 
