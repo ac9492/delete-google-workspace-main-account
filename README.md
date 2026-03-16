@@ -23,6 +23,12 @@ In short: **the Google Cloud UI may look empty, while hidden resources still exi
 
 ---
 
+## Disclaimer
+
+This guide was written with the help of AI. All steps were manually tested twice, and the guide has been corrected and polished. If you have trouble or an edge-case not covered in this guide, I recommend giving this context to your AI of choice plus the steps and issue you are facing so that you can get support for your specific issue. I was able to delete two Google Admin accounts thanks to this guide.
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -76,7 +82,7 @@ The reliable cleanup order is:
 1. Delete hidden `sys-*` projects
 2. Delete nested folders such as `apps-script`
 3. Delete parent folders such as `system-gsuite`
-4. Retry deletion in Google Admin, which will succeed if you've never used Google Cloud or have no existing resources in there.
+4. Retry deletion in Google Admin, which will succeed if you've never used Google Cloud or have no additional resources in there.
 
 ---
 
@@ -109,11 +115,9 @@ To add permissions via the UI, [go here](https://console.cloud.google.com/iam-ad
 
 Then, click the pencil icon next to your user, and click on "Add Role". It should look like this:
 
+![image showing how to edit permissions](images/assigning_roles.png)
 
-
-
-
-What each one is needed for:
+What each permission is needed for:
 
 - **Organization Admin**: organization-level management
 - **Folder Viewer**: lets you see hidden folder structure
@@ -123,6 +127,10 @@ What each one is needed for:
 > **Note**
 >
 > Some accounts may already have broader roles like `roles/owner`, but the roles above are the ones directly relevant to this workflow.
+
+If you still get issues with permissions, below are all the roles I had assigned at the time of creating this guide. You might want to add additional roles if you don't have them.
+
+![image showing all permissions](images/all_roles.png)
 
 ---
 
