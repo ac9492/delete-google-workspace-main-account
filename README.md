@@ -1,4 +1,4 @@
-<img width="1029" height="471" alt="image" src="https://github.com/user-attachments/assets/0838fbb0-514c-4be3-9312-9c67c8e5272b" /># How to Delete a Google Workspace / Admin Account When Google Says Google Cloud Resources Still Exist
+# How to Delete a Google Workspace / Admin Account When Google Says Google Cloud Resources Still Exist
 
 This guide documents a real-world fix for a confusing Google Workspace deletion loop:
 
@@ -107,7 +107,9 @@ Assign these roles to your user before starting. These can be added via the shel
 
 To add permissions via the UI, [go here](https://console.cloud.google.com/iam-admin/iam).
 
-Then, click the pencil icon next to your user, and click on "Add Role".
+Then, click the pencil icon next to your user, and click on "Add Role". It should look like this:
+
+
 
 
 
